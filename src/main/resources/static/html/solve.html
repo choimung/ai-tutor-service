@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="title" content="웹사이트">
+    <meta name="description" content="웹사이트입니다.">
+    <meta name="keywords" content="키워드,키워드,키워드">
+    <meta property="og:title" content="웹사이트">
+    <meta property="og:description" content="웹사이트입니다">
+    <meta property="og:image" content="https://웹사이트/images/opengraph.png">
+    <meta property="og:url" content="https://웹사이트">
+    <title>문제풀기 복제본 | ㅎㅎ</title>
+    <link rel="stylesheet" href="../resources/css/setting.css">
+    <link rel="stylesheet" href="../resources/css/plugin.css">
+    <link rel="stylesheet" href="../resources/css/template.css">
+    <link rel="stylesheet" href="../resources/css/common.css">
+    <link rel="stylesheet" href="../resources/css/style.css">
+    <script src="https://kit.fontawesome.com/e818618146.js" crossorigin="anonymous"></script>
+    <style>
+        .wrap {
+            display: flex;
+        }
+
+        .aticle1 {
+            width: 20%;
+            /*       background-color: #123;*/
+        }
+
+        .aticle2 {
+            padding: 2px;
+            position: relative;
+            width: 60%;
+            /*       background-color: #999ea3;*/
+            overflow: hidden;
+        }
+
+        .aticle2 .progressbar {
+            right: 0;
+            width: 200px;
+            height: 40px;
+            /*       background-color: #6e89a3;*/
+        }
+
+        .aticle2 .solve {
+            margin-top: 20px;
+            border-radius: 20px;
+            margin: 0 20 auto;
+            width: 100%;
+            /*        max-height: 100%;*/
+            background-color: rgba(186, 186, 186, 0.13);
+            margin-bottom: 30px;
+        }
+
+        .aticle2 .answer {
+            padding: 20px;
+            border-radius: 20px;
+            margin: 0 auto;
+            width: 100%;
+            max-height: 100%;
+            background-color: rgba(255, 255, 255, 0.13);
+        }
+
+        .aticle2 .answer input {
+            display: block;
+            margin: 0 auto;
+            width: 95%;
+            min-height: 100px; /* 최소 높이 설정 */
+            border: 1px solid rgba(10, 10, 10, 0.13);
+            border-radius: 20px;
+            padding: 10px;
+            overflow: hidden; /* 텍스트가 입력란을 넘어갈 경우 숨김 처리 */
+        }
+        .aticle2 .answer a {
+            color: #12215f;
+            transition: 0.5s;
+        }        
+        .aticle2 .answer a:hover {
+            color: #153bdb;
+        }
+
+        .aticle2 .solve img {
+            padding: 15px;
+        }
+
+        .aticle3 {
+            width: 20%;
+            height: 1500px;
+            background-color: #dedede;
+        }
+
+
+        .grow-wrap {
+            /* easy way to plop the elements on top of each other and have them both sized based on the tallest one's height */
+            display: grid;
+        }
+
+        .grow-wrap::after {
+            /* Note the weird space! Needed to preventy jumpy behavior */
+            content: attr(data-replicated-value) " ";
+
+            /* This is how textarea text behaves */
+            white-space: pre-wrap;
+
+            /* Hidden from view, clicks, and screen readers */
+            visibility: hidden;
+        }
+
+        .grow-wrap > textarea {
+
+            border: none; /* 테두리 없애기 */
+            outline: none; /* 포커스 시 외곽선 없애기 */
+            border: 1px solid #a03e3e;
+            /* You could leave this, but after a user resizes, then it ruins the auto sizing */
+            resize: none;
+            width: 95%;
+            /*    margin: */
+            /* Firefox shows scrollbar on growth, you can hide like this. */
+            overflow: hidden;
+        }
+
+        .grow-wrap > textarea,
+        .grow-wrap::after {
+
+            /* Identical styling required!! */
+            border: 1px solid #e8e3e3;
+            border-radius: 20px;
+            padding: 0.5rem;
+            font: inherit;
+
+            /* Place on top of each other */
+            grid-area: 1 / 1 / 2 / 2;
+        }
+    </style>
+
+</head>
+
+<body>
+<!-- [S]personal-pNLvXX264D -->
+<div class="personal-pNLvXX264D" id="" data-bid="yPlVXx9tKF">
+    <div class="header-inner">
+        <div class="header-container container-lg">
+            <h1 class="header-title">
+                <a href="javascript:void(0)">
+                    <img src="../medias/icons/iconsax-bold/frame-2.svg" alt="">
+                </a>
+            </h1>
+            <div class="header-center">
+                <div class="header-title header-mobile-top">
+                    <a href="javascript:void(0)">
+                        <img src="../resources/images/img_logo_black.png" alt="로고">
+                    </a>
+                </div>
+                <ul class="header-gnblist">
+                    <li class="header-gnbitem">
+                        <a class="header-gnblink" href="javascript:void(0)">
+                            <span>문제풀기</span>
+                        </a>
+                    </li>
+                    <li class="header-gnbitem">
+                        <a class="header-gnblink" href="javascript:void(0)">
+                            <span>게시판</span>
+                        </a>
+                    </li>
+                    <li class="header-gnbitem">
+                        <a class="header-gnblink" href="javascript:void(0)">
+                            <span>랭킹</span>
+                        </a>
+                    </li>
+                    <li class="header-gnbitem">
+                        <a class="header-gnblink" href="javascript:void(0)">
+                            <span>ChatGPT</span>
+                        </a>
+                    </li>
+                    <li class="header-gnbitem">
+                    </li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <div class="header-lang">
+                    <ul class="header-langlist">
+                        <li class="header-langitem">
+                            <a href="javascript:void(0)">KOR</a>
+                        </li>
+                        <li class="header-langitem">
+                            <a href="javascript:void(0)">ENG</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <img class="icon-lg" src="../resources/icons/ico_user_black.svg" alt="로그인아이콘">
+        </div>
+    </div>
+    <div class="header-dim"></div>
+</div>
+
+
+<!-- [E]personal-pNLvXX264D -->
+<div class="th-layout-content">
+
+
+    <div class="wrap">
+        <div class="aticle1">
+            gfdgfdgfdgfd
+        </div>
+        <div class="aticle2">
+
+            <div class="progressbar">
+               진행도
+                <progress
+              class="progress"
+              id="progress"
+              value="20"
+              min="0"
+              max="100"
+            ></progress>
+            </div>
+
+            <div class="solve">
+                <p><img src="https://temha.io/medias/icons/iconsax-bold/frame-2.svg" alt=""><span
+                        style="font-size: 14px;">문제</span></p>
+                <hr style="margin-top: -3px; border: 0.1px solid #d1d1d1">
+                <p style="padding: 20px;">국정감사 및 조사에 관한 절차 기타 필요한 사항은 법률로 정한다. 모든 국민은 학문과 예술의 자유를 가진다. 정당은 법률이 정하는 바에 의하여 국가의 보호를 받으며, 국가는 법률이 정하는 바에 의하여 정당운영에 필요한 자금을 보조할 수 있다.
+
+헌법개정안이 제2항의 찬성을 얻은 때에는 헌법개정은 확정되며, 대통령은 즉시 이를 공포하여야 한다. 대통령은 국무총리·국무위원·행정각부의 장 기타 법률이 정하는 공사의 직을 겸할 수 없다.
+
+비상계엄이 선포된 때에는 법률이 정하는 바에 의하여 영장제도, 언론·출판·집회·결사의 자유, 정부나 법원의 권한에 관하여 특별한 조치를 할 수 있다.
+
+형사피해자는 법률이 정하는 바에 의하여 당해 사건의 재판절차에서 진술할 수 있다. 국회에 제출된 법률안 기타의 의안은 회기중에 의결되지 못한 이유로 폐기되지 아니한다. 다만, 국회의원의 임기가 만료된 때에는 그러하지 아니하다.
+
+국회에서 의결된 법률안은 정부에 이송되어 15일 이내에 대통령이 공포한다. 정당은 그 목적·조직과 활동이 민주적이어야 하며, 국민의 정치적 의사형성에 참여하는데 필요한 조직을 가져야 한다.
+
+국회는 상호원조 또는 안전보장에 관한 조약, 중요한 국제조직에 관한 조약, 우호통상항해조약, 주권의 제약에 관한 조약, 강화조약, 국가나 국민에게 중대한 재정적 부담을 지우는 조약 또는 입법사항에 관한 조약의 체결·비준에 대한 동의권을 가진다.
+
+법률이 정하는 주요방위산업체에 종사하는 근로자의 단체행동권은 법률이 정하는 바에 의하여 이를 제한하거나 인정하지 아니할 수 있다. 정부는 예산에 변경을 가할 필요가 있을 때에는 추가경정예산안을 편성하여 국회에 제출할 수 있다.
+
+공무원의 직무상 불법행위로 손해를 받은 국민은 법률이 정하는 바에 의하여 국가 또는 공공단체에 정당한 배상을 청구할 수 있다. 이 경우 공무원 자신의 책임은 면제되지 아니한다.
+
+학교교육 및 평생교육을 포함한 교육제도와 그 운영, 교육재정 및 교원의 지위에 관한 기본적인 사항은 법률로 정한다. 대통령은 조약을 체결·비준하고, 외교사절을 신임·접수 또는 파견하며, 선전포고와 강화를 한다.
+
+국무총리는 대통령을 보좌하며, 행정에 관하여 대통령의 명을 받아 행정각부를 통할한다. 감사원은 세입·세출의 결산을 매년 검사하여 대통령과 차년도국회에 그 결과를 보고하여야 한다.
+
+헌법재판소 재판관은 정당에 가입하거나 정치에 관여할 수 없다. 선거에 관한 경비는 법률이 정하는 경우를 제외하고는 정당 또는 후보자에게 부담시킬 수 없다.
+
+교육의 자주성·전문성·정치적 중립성 및 대학의 자율성은 법률이 정하는 바에 의하여 보장된다. 모든 국민은 통신의 비밀을 침해받지 아니한다. 모든 국민은 법 앞에 평등하다. 누구든지 성별·종교 또는 사회적 신분에 의하여 정치적·경제적·사회적·문화적 생활의 모든 영역에 있어서 차별을 받지 아니한다.
+
+국민의 모든 자유와 권리는 국가안전보장·질서유지 또는 공공복리를 위하여 필요한 경우에 한하여 법률로써 제한할 수 있으며, 제한하는 경우에도 자유와 권리의 본질적인 내용을 침해할 수 없다.
+
+법관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니하며, 징계처분에 의하지 아니하고는 정직·감봉 기타 불리한 처분을 받지 아니한다.
+
+군인·군무원·경찰공무원 기타 법률이 정하는 자가 전투·훈련등 직무집행과 관련하여 받은 손해에 대하여는 법률이 정하는 보상외에 국가 또는 공공단체에 공무원의 직무상 불법행위로 인한 배상은 청구할 수 없다.</p>
+            </div>
+            <div class="answer" style="position: relative;">
+                <a href="#"><i class="fa-solid fa-paper-plane"
+                               style="font-size: 30px; position: absolute; right: 30px; top: 60px; margin-left: 1050px;"></i></a>
+
+                <form action="#0">
+                    <div class="grow-wrap">
+                        <textarea name="text" id="text"
+                                  onInput="this.parentNode.dataset.replicatedValue = this.value"></textarea>
+                    </div>
+
+                </form>
+                <br>
+            </div>
+        </div>
+        <div class="aticle3">
+            gfdgfdgfdgfdfsdfdfdsfdsfdsfdsfdsfsfsffsfsfsfsfsfds
+        </div>
+    </div>
+
+
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var input = document.getElementById('dynamicInput');
+
+        function adjustInputHeight() {
+            input.style.height = 'auto';
+            input.style.height = input.scrollHeight + 'px';
+        }
+
+        input.addEventListener('input', adjustInputHeight);
+    });
+</script>
+
+
+<!-- [S]personal-fZlVxx2hoG -->
+<div class="personal-fZlVxx2hoG" id="" data-bid="UHlVxx9r6Z">
+    <div class="footer-container container-lg">
+        <div class="footer-top">
+            <h1 class="header-title">
+                <a href="javascript:void(0)">
+                    <img src="../medias/icons/iconsax-bold/frame-2.svg" alt="">
+                </a>
+            </h1>
+            <h1 class="footer-logo">
+                <a href="javascript:void(0)">
+                </a>
+            </h1>
+            <ul class="footer-menulist">
+                <li class="footer-menuitem">
+                    <a href="javascript:void(0)">
+                        <span>이용약관</span>
+                    </a>
+                </li>
+                <li class="footer-menuitem">
+                    <a href="javascript:void(0)">
+                        <span>개인정보처리방침</span>
+                    </a>
+                </li>
+                <li class="footer-menuitem">
+                    <a href="javascript:void(0)">
+                        <span>문제풀기</span>
+                    </a>
+                </li>
+                <li class="footer-menuitem">
+                    <a href="javascript:void(0)">
+                        <span>랭킹</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="footer-snslist">
+                <li class="footer-snsitem">
+                </li>
+                <li class="footer-snsitem">
+                    <a class="footer-snslink" href="javascript:void(0)">
+                    </a>
+                </li>
+                <li class="footer-snsitem">
+                    <a class="footer-snslink" href="javascript:void(0)">
+                    </a>
+                </li>
+                <li class="footer-snsitem">
+                    <a class="footer-snslink" href="javascript:void(0)">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-txt">
+                <p> 경기도 부천시 원미구 신흥로56번길 25 부천대학교 </p>
+                <p>
+                    <span>T. 032-610-0114</span>
+                    <span>E. alsdn4590@gmail.com</span>
+                </p>
+            </div>
+            <div class="footer-txt">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- [E]personal-fZlVxx2hoG -->
+<script src="../resources/js/setting.js"></script>
+<script src="../resources/js/plugin.js"></script>
+<script src="../resources/js/template.js"></script>
+<script src="../resources/js/common.js"></script>
+<script src="../resources/js/script.js"></script>
+</body>
